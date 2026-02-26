@@ -1,0 +1,16 @@
+&lt;resources xmlns:tools=&quot;http://schemas.android.com/tools&quot;&gt;
+    &lt;!-- Base application theme. --&gt;
+    &lt;style name=&quot;Theme.OpenClawAssistant&quot; parent=&quot;Theme.MaterialComponents.DayNight.DarkActionBar&quot;&gt;
+        &lt;!-- Primary brand color. --&gt;
+        &lt;item name=&quot;colorPrimary&quot;&gt;#6200EE&lt;/item&gt;
+        &lt;item name=&quot;colorPrimaryVariant&quot;&gt;#3700B3&lt;/item&gt;
+        &lt;item name=&quot;colorOnPrimary&quot;&gt;#FFFFFF&lt;/item&gt;
+        &lt;!-- Secondary brand color. --&gt;
+        &lt;item name=&quot;colorSecondary&quot;&gt;#03DAC5&lt;/item&gt;
+        &lt;item name=&quot;colorSecondaryVariant&quot;&gt;#018786&lt;/item&gt;
+        &lt;item name=&quot;colorOnSecondary&quot;&gt;#000000&lt;/item&gt;
+        &lt;!-- Status bar color. --&gt;
+        &lt;item name=&quot;android:statusBarColor&quot; tools:targetApi=&quot;l&quot;&gt;?attr/colorPrimaryVariant&lt;/item&gt;
+        &lt;!-- Customize your theme here. --&gt;
+    &lt;/style&gt;
+&lt;/resources&gt;

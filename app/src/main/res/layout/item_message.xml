@@ -1,0 +1,32 @@
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    android:orientation=&quot;vertical&quot;
+    android:padding=&quot;12dp&quot;&gt;
+
+    &lt;TextView
+        android:id=&quot;@+id/senderText&quot;
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:textColor=&quot;#2196F3&quot;
+        android:textSize=&quot;14sp&quot;
+        android:textStyle=&quot;bold&quot; /&gt;
+
+    &lt;TextView
+        android:id=&quot;@+id/contentText&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:layout_marginTop=&quot;4dp&quot;
+        android:textSize=&quot;16sp&quot; /&gt;
+
+    &lt;TextView
+        android:id=&quot;@+id/timeText&quot;
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:layout_gravity=&quot;end&quot;
+        android:layout_marginTop=&quot;4dp&quot;
+        android:textColor=&quot;#757575&quot;
+        android:textSize=&quot;12sp&quot; /&gt;
+
+&lt;/LinearLayout&gt;
