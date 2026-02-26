@@ -1,26 +1,26 @@
 plugins {
-    id(&quot;com.android.application&quot;)
-    id(&quot;org.jetbrains.kotlin.android&quot;)
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {
-    namespace = &quot;ai.openclaw.assistant&quot;
+    namespace = "ai.openclaw.assistant"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = &quot;ai.openclaw.assistant&quot;
+        applicationId = "ai.openclaw.assistant"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
-        versionName = &quot;1.0&quot;
+        versionName = "1.0"
 
-        testInstrumentationRunner = &quot;androidx.test.runner.AndroidJUnitRunner&quot;
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile(&quot;proguard-android-optimize.txt&quot;), &quot;proguard-rules.pro&quot;)
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
     compileOptions {
@@ -28,7 +28,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = &quot;1.8&quot;
+        jvmTarget = "1.8"
     }
     buildFeatures {
         viewBinding = true
@@ -36,28 +36,28 @@ android {
 }
 
 dependencies {
-    implementation(&quot;androidx.core:core-ktx:1.12.0&quot;)
-    implementation(&quot;androidx.appcompat:appcompat:1.6.1&quot;)
-    implementation(&quot;com.google.android.material:material:1.11.0&quot;)
-    implementation(&quot;androidx.constraintlayout:constraintlayout:2.1.4&quot;)
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     
     // WebSocket
-    implementation(&quot;org.java-websocket:Java-WebSocket:1.5.4&quot;)
+    implementation("org.java-websocket:Java-WebSocket:1.5.4")
     
     // Room DB
-    val room_version = &quot;2.6.1&quot;
-    implementation(&quot;androidx.room:room-runtime:$room_version&quot;)
-    implementation(&quot;androidx.room:room-ktx:$room_version&quot;)
-    kapt(&quot;androidx.room:room-compiler:$room_version&quot;)
+    val room_version = "2.6.1"
+    implementation("androidx.room:room-runtime:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
     
     // Lifecycle
-    implementation(&quot;androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0&quot;)
-    implementation(&quot;androidx.lifecycle:lifecycle-livedata-ktx:2.7.0&quot;)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
     
     // Coroutines
-    implementation(&quot;org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3&quot;)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     
-    testImplementation(&quot;junit:junit:4.13.2&quot;)
-    androidTestImplementation(&quot;androidx.test.ext:junit:1.1.5&quot;)
-    androidTestImplementation(&quot;androidx.test.espresso:espresso-core:3.5.1&quot;)
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }

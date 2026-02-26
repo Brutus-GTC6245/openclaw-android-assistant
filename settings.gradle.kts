@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = &quot;OpenClawAssistant&quot;
-include(&quot;:app&quot;)
+rootProject.name = "OpenClawAssistant"
+include(":app")
